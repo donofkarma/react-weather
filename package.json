@@ -1,0 +1,31 @@
+{
+  "name": "react-training-project",
+  "version": "0.0.1",
+  "description": "Weather App post-lecture project from the React Training course",
+  "author": "Jasal Vadgama",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV='production' webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "query-string": "^4.3.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.28.0",
+    "prop-types": "^15.5.8",
+    "styled-components": "^1.4.5",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
