@@ -31,3 +31,4 @@ Thumbs.db
 #################
 dist/
 node_modules/
+.env

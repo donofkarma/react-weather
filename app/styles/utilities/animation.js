@@ -5,4 +5,4 @@ export function transition(property = 'all', duration = constants.duration, easi
     return css`
         transition: ${ property } ${ duration } ${ easing };
     `;
-};
+}

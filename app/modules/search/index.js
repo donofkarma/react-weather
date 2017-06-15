@@ -27,4 +27,8 @@ class Search extends React.Component {
     }
 }
 
+Search.propTypes = {
+    className: PropTypes.string
+};
+
 export default Search;

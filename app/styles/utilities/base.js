@@ -8,7 +8,7 @@ injectGlobal`
         color: ${ namedColors.copy };
         font-family: ${ font.body };
         font-size: 0.875rem; /* set to 14px equivalent */
-        line-height: 1.6;
+        line-height: 1.4;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: subpixel-antialiased;
         -webkit-font-smoothing: antialiased;

@@ -9,16 +9,18 @@ export const Form = styled.form`
     label {
         display: inline-block;
         margin-bottom: 1rem;
-        font-size: 2rem;
+        color: ${ colors.white };
+        font-size: 3rem;
     }
 
     input {
         display: block;
         margin: 0 auto 1rem;
-        padding: 5px 10px;
-        width: 200px;
+        padding: 10px 15px;
+        width: 250px;
         border: 1px solid ${ colors.grey.light };
-        border-radius: 3px;
+        border-radius: 4px;
         font-size: 1.2rem;
+        text-align: center;
     }
 `;
