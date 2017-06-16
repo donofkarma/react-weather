@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../tokens/breakpoints';
 import { colors } from '../tokens/color';
 
 export const Form = styled.form`
@@ -9,15 +10,19 @@ export const Form = styled.form`
     label {
         display: inline-block;
         margin-bottom: 1rem;
-        // color: ${ colors.white };
-        font-size: 3rem;
+        font-size: 2rem;
+
+        @media (min-width: ${ breakpoints.large }) {
+            font-size: 2.4rem;
+        }
     }
 
     input {
         display: block;
         margin: 0 auto 1rem;
         padding: 10px 15px;
-        width: 250px;
+        width: 90%;
+        max-width: 320px;
         border: 1px solid ${ colors.grey.light };
         border-radius: 4px;
         font-size: 1.2rem;

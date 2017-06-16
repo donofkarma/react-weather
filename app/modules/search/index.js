@@ -5,6 +5,10 @@ import { SearchForm, Button } from './style';
 class Search extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            isButtonDisabled: true
+        }
     }
 
     render() {
@@ -17,6 +21,7 @@ class Search extends React.Component {
                     type="text"
                 />
                 <Button
+                    disabled={this.state.isButtonDisabled}
                     id="location"
                     type="submit"
                 >

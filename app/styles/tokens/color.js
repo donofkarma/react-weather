@@ -5,9 +5,8 @@ export const colors = {
     black: '#000',
     blue: {
         light: '#a7dbd8',
-        medium: '#69D2E7'
+        medium: '#69d2e7'
     },
-    green: '#E0E4CC',
     grey: {
         light: '#ccc',
         medium: '#999',
@@ -15,7 +14,7 @@ export const colors = {
     },
     orange: {
         light: '#f38630',
-        medium: '#faA6900'
+        medium: '#fa6900'
     },
     red: '#ff0000',
     white: '#fff'
