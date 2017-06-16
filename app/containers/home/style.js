@@ -5,7 +5,7 @@ export const Main = styled.main`
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 64px);
-    background: url(/assets/images/bg.svg) center center no-repeat;
+    // background: url(/assets/images/bg.svg) center center no-repeat;
     background-size: cover;
 
     form {

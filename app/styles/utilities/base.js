@@ -4,10 +4,14 @@ import { namedColors } from '../tokens/color';
 import { transition } from './animation';
 
 injectGlobal`
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         color: ${ namedColors.copy };
         font-family: ${ font.body };
-        font-size: 0.875rem; /* set to 14px equivalent */
+        font-size: 1rem;
         line-height: 1.4;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: subpixel-antialiased;
@@ -45,5 +49,9 @@ injectGlobal`
         padding: 2px 4px;
         background: black;
         color: greenyellow;
+    }
+
+    main {
+        padding: 20px;
     }
 `;

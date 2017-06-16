@@ -9,7 +9,7 @@ export const Form = styled.form`
     label {
         display: inline-block;
         margin-bottom: 1rem;
-        color: ${ colors.white };
+        // color: ${ colors.white };
         font-size: 3rem;
     }
 
@@ -22,5 +22,18 @@ export const Form = styled.form`
         border-radius: 4px;
         font-size: 1.2rem;
         text-align: center;
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: ${ colors.grey.light };
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: ${ colors.grey.light };
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: ${ colors.grey.light };
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: ${ colors.grey.light };
+        }
     }
 `;

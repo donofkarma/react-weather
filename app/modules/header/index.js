@@ -1,13 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { H1, SearchForm, SiteHeader } from './style';
+import { H1, Navigation, SiteHeader } from './style';
 
 class Header extends React.Component {
     render() {
         return (
             <SiteHeader className={this.props.className}>
-                <H1>Weather App</H1>
-                <SearchForm className />
+                <H1>
+                    <NavLink to="/">React Weather App</NavLink>
+                </H1>
+                <Navigation />
             </SiteHeader>
         );
     }

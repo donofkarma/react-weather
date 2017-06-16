@@ -13,7 +13,7 @@ class Search extends React.Component {
                 <label htmlFor="location">Enter your Town or City</label>
                 <input
                     id="location"
-                    placeholder="London"
+                    placeholder="e.g. London"
                     type="text"
                 />
                 <Button
