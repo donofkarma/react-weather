@@ -22,4 +22,8 @@ export const Navigation = styled(Nav)`
     float: right;
     font-size: 1rem;
     line-height: 2rem;
+
+    @media (min-width: ${ breakpoints.small }) {
+        line-height: 2.8rem;
+    }
 `;

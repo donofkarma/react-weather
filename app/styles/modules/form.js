@@ -19,7 +19,7 @@ export const Form = styled.form`
 
     input {
         display: block;
-        margin: 0 auto 1rem;
+        margin: 0 auto 1.4rem;
         padding: 10px 15px;
         width: 90%;
         max-width: 320px;
