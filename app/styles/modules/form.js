@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import breakpoints from '../tokens/breakpoints';
-import { colors } from '../tokens/color';
+
+import breakpoints from 'styles/tokens/breakpoints';
+import { colors } from 'styles/tokens/color';
 
 export const Form = styled.form`
     margin: 0;

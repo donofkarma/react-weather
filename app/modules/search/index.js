@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { SearchForm, Button } from './style';
 
 class Search extends React.Component {
@@ -56,7 +57,7 @@ Search.propTypes = {
 };
 
 Search.contextTypes = {
-  router: PropTypes.object
+    router: PropTypes.object
 };
 
 export default Search;

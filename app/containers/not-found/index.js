@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Main } from './style';
+import PageContent from 'components/page-content';
 
 class NotFound extends React.Component {
     render() {
         return (
-            <Main>
+            <PageContent>
                 <h1>404</h1>
                 <p>Couldn't find that...</p>
-            </Main>
+            </PageContent>
         );
     }
 }

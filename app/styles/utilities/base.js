@@ -1,7 +1,8 @@
 import { injectGlobal } from 'styled-components';
-import font from '../tokens/font';
-import { namedColors } from '../tokens/color';
-import { transition } from './animation';
+
+import font from 'styles/tokens/font';
+import { namedColors } from 'styles/tokens/color';
+import { transition } from 'styles/utilities/animation';
 
 injectGlobal`
     * {
@@ -49,9 +50,5 @@ injectGlobal`
         padding: 2px 4px;
         background: black;
         color: greenyellow;
-    }
-
-    main {
-        padding: 20px;
     }
 `;

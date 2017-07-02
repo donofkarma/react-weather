@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
-import { colors } from '../tokens/color';
-import { transition } from '../utilities/animation';
+
+import { colors } from 'styles/tokens/color';
+import { transition } from 'styles/utilities/animation';
 
 export default css`
     margin: 0;

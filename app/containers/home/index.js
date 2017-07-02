@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Search from '../../modules/search';
-import { Main } from './style';
+import PageContent from 'components/page-content';
+import Search from 'modules/search';
 
 class Home extends React.Component {
     render() {
         return (
-            <Main>
+            <PageContent>
                 <Search />
-            </Main>
+            </PageContent>
         );
     }
 }

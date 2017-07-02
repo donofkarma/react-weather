@@ -54,7 +54,13 @@ let config = {
         new Dotenv({
             path: './.env'
         })
-    ]
+    ],
+    resolve: {
+        modules: [
+            path.resolve('./app'),
+            path.resolve('./node_modules')
+        ]
+    }
 };
 
 if (process.env.NODE_ENV === 'production') {
