@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router';
 
 import Header from 'modules/header';
+import About from 'containers/about';
 import Home from 'containers/home';
 import NotFound from 'containers/not-found';
 
@@ -23,6 +24,7 @@ class BaseRoute extends React.Component {
 
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
                     { /* 404 page - private route so you can't guess paths */ }
                     <Route path="*" component={NotFound} />
                 </Switch>

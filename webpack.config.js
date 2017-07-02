@@ -39,6 +39,11 @@ let config = {
         // copy static assets
         new CopyWebpackPlugin([
             {
+                context: 'src/fonts',
+                from: '**/*',
+                to: 'assets/fonts'
+            },
+            {
                 context: 'src/images/public',
                 from: '**/*',
                 to: 'assets/images'

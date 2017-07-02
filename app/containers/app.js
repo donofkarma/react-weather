@@ -12,6 +12,7 @@ import Sagas from 'sagas';
 // global css
 import 'styles/utilities/normalize';
 import 'styles/utilities/base';
+import 'styles/utilities/weather-icons';
 
 import BaseRoute from 'containers/base';
 

@@ -8,7 +8,7 @@ class Header extends React.Component {
         return (
             <SiteHeader className={this.props.className}>
                 <H1>
-                    <NavLink to="/">React Weather App</NavLink>
+                    <NavLink to="/">React Weather</NavLink>
                 </H1>
                 <Navigation />
             </SiteHeader>
