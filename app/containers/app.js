@@ -1,4 +1,5 @@
 import React from 'react';
+import Async from 'react-code-splitting';
 import { Provider } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 import { Route } from 'react-router';
@@ -14,7 +15,7 @@ import 'styles/utilities/normalize';
 import 'styles/utilities/base';
 import 'styles/utilities/weather-icons';
 
-import BaseRoute from 'containers/base';
+const BaseRoute = () => <Async load={import('containers/base')} />
 
 // create a history of your choosing (we're using a browser history in this case)
 const history = createHistory();

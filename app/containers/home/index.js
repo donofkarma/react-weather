@@ -1,7 +1,8 @@
 import React from 'react';
+import Async from 'react-code-splitting';
 
-import PageContent from 'components/page-content';
-import Search from 'modules/search';
+const PageContent = () => <Async load={import('components/page-content')} />
+const Search = () => <Async load={import('modules/search')} />
 
 class Home extends React.Component {
     render() {

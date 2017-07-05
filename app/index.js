@@ -1,6 +1,8 @@
 import React from 'react';
+import Async from 'react-code-splitting';
 import ReactDOM from 'react-dom';
-import App from 'containers/app';
+
+const App = () => <Async load={import('containers/app')} />
 
 ReactDOM.render(
     <App />,

@@ -1,6 +1,7 @@
 import React from 'react';
+import Async from 'react-code-splitting';
 
-import PageContent from 'components/page-content';
+const PageContent = () => <Async load={import('components/page-content')} />
 
 class NotFound extends React.Component {
     render() {

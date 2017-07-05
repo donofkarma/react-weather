@@ -1,12 +1,13 @@
 import React from 'react';
+import Async from 'react-code-splitting';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router';
 
-import Header from 'modules/header';
-import About from 'containers/about';
-import Home from 'containers/home';
-import NotFound from 'containers/not-found';
+const Header = () => <Async load={import('modules/header')} />
+const About = () => <Async load={import('containers/about')} />
+const Home = () => <Async load={import('containers/home')} />
+const NotFound = () => <Async load={import('containers/not-found')} />
 
 class BaseRoute extends React.Component {
     constructor(props) {
