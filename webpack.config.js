@@ -7,10 +7,25 @@ const WriteFilePlugin = require('write-file-webpack-plugin');
 
 let config = {
     // app entry
-    entry: [
-        'babel-polyfill',
-        './app/index.js'
-    ],
+    entry: {
+        app: [
+            'babel-polyfill',
+            './app/index.js'
+        ],
+        vendor: [
+            'es6-promise',
+            'isomorphic-fetch',
+            'react',
+            'react-addons-update',
+            'react-code-splitting',
+            'react-dom',
+            'react-redux',
+            'react-router-dom',
+            'react-router-redux',
+            'redux',
+            'redux-saga'
+        ]
+    },
     // bundle output
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -58,6 +73,12 @@ let config = {
         // expose env vars to the bundle process
         new Dotenv({
             path: './.env'
+        }),
+        // code splitting
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            minChunks: Infinity,
+            filename: 'vendor_bundle.js'
         })
     ],
     resolve: {

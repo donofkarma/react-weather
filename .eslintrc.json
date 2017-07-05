@@ -12,7 +12,8 @@
         "ecmaFeatures": {
             "impliedStrict": true,
             "jsx": true
-        }
+        },
+        "allowImportExportEverywhere": true
     },
     "rules": {
         "no-alert": 0,
