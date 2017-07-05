@@ -13,17 +13,14 @@ let config = {
             './app/index.js'
         ],
         vendor: [
-            'es6-promise',
-            'isomorphic-fetch',
+            'prop-types',
             'react',
-            'react-addons-update',
-            'react-code-splitting',
             'react-dom',
             'react-redux',
             'react-router-dom',
             'react-router-redux',
             'redux',
-            'redux-saga'
+            'styled-components'
         ]
     },
     // bundle output
@@ -98,7 +95,17 @@ if (process.env.NODE_ENV === 'production') {
             }
         }),
         // minify js
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin({
+            beautify: false,
+            mangle: {
+                screw_ie8: true,
+                keep_fnames: false
+            },
+            compress: {
+                screw_ie8: true
+            },
+            comments: false
+        })
     );
 }
 
